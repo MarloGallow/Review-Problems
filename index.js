@@ -1,14 +1,17 @@
 
 ///Strings
 //First, declare variable named firstName.
-
+var firstName;
 //Assign firstName to a string value of your first name.
-
+firstName = "Deez"
 //Declare another variable named lastName and assign it the value of your last name.
-
+var lastName = "nuts"
 //Then declare another variable named fullName and assign it to the current value of firstName and lastName and have the joined values separated with a space character.
-
+var fullName = firstName + ' ' + lastName
+console.log(fullName)
 //Remember that computer languages will not add the space character for you so how would you do that manually?
+
+
 
 
 
@@ -19,12 +22,14 @@
 
 //Numbers
 //Declare a variable named luckyNumber.
-
+var luckyNumber;
 //Assign luckyNumber to a number of your choice.
-
+luckyNumber = 91021
 //Declare another variable named luckyNumberTimes2 and assign it the value of luckyNumber multiplied by 2.
 
 
+
+var luckyNumberTimes2 = luckyNumber * 2;
 
 
 
@@ -36,10 +41,10 @@
 
 //Booleans
 //Declare a variable named myBool and assign it the value of true.
-
+var myBool = true;
 
 //Then, declare another named isEqualTo and assign it the value of strictly comparing luckyNumber and luckyNumberTimes2.
-
+var isEqualTo = luckyNumber === luckyNumberTimes2
 
 
 
@@ -67,8 +72,11 @@ factorial(8); // => 40320 (8 * 7 * 6 * 5 * 4 * 3 * 2 * 1)
 
 function factorial(number){
 //CODE BELOW HERE
-
-
+var answer = 1;
+for(var i = number; i >= 1; i--){
+answer = answer * i;
+}
+console.log(answer)
 
 //CODE ABOVE HERE
 }
@@ -89,7 +97,7 @@ reverseString('Hello, World!'); // => '!dlroW ,olleH'
 
 function reverseString(string){
   //CODE BELOW HERE
-
+console.log(reverse.reverseString)
 
 
   //CODE ABOVE HERE
@@ -109,6 +117,6 @@ var myArray = [1,2,3,4,5]
 arraySum(myArray) => 15
 */
 function arraySum(array){
-   
-    
+   var array = ["1" , "2" , "3" , "4" , "5"]
+    array = array + array;
 }
